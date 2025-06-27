@@ -10,6 +10,14 @@ public class Boardgame extends Game {
         this.avgDuration = avgDuration;
     }
 
+    public int getnGamers() {
+        return nGamers;
+    }
+
+    public int getAvgDuration() {
+        return avgDuration;
+    }
+
     @Override
     public String toString() {
         return "Boardgame{" +

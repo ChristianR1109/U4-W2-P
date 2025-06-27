@@ -15,8 +15,8 @@ public class Collection {
     Videogame videogame4 = new Videogame("126", "prova4", 2000, 29.90, "PS5", 24, Genre.ARCADE);
     Videogame videogame5 = new Videogame("127", "prova5", 2000, 29.90, "PS5", 24, Genre.ARCADE);
     Boardgame boardgame1 = new Boardgame("128", "prova6", 2000, 29.90, 6, 30);
-    Boardgame boardgame2 = new Boardgame("129", "prova7", 2000, 29.90, 6, 30);
-    Boardgame boardgame3 = new Boardgame("130", "prova8", 2000, 29.90, 6, 30);
+    Boardgame boardgame2 = new Boardgame("129", "prova7", 2000, 29.90, 3, 30);
+    Boardgame boardgame3 = new Boardgame("130", "prova8", 2000, 29.90, 3, 30);
     Boardgame boardgame4 = new Boardgame("131", "prova9", 2000, 29.90, 6, 30);
     Boardgame boardgame5 = new Boardgame("132", "prova10", 2000, 29.90, 6, 30);
 
@@ -59,5 +59,16 @@ public class Collection {
                 .stream()
                 .filter(g -> g.getPrice() < maxPrice)
                 .collect(Collectors.toList());
+    }
+
+    public List<Boardgame> researchByNumOGamers(int n) {
+        return games.values()
+                .stream()
+                .filter(g -> g instanceof Boardgame)//ho utilizzato .map per trasformare ogni oggetto generico di Game in un oggetto di tipo Boardgame, Intellij mi suggeriva questa alternativa
+                .map(g -> (Boardgame) g)  // .filter(game -> ((Boardgame) game).getnGamers()) ma non mi risultava abbastanza leggibile o intuitiva, quindi ho cercato altri metodi per risolvere.
+                .filter(g -> g.getnGamers() == n)
+                .collect(Collectors.toList());
+
+
     }
 }

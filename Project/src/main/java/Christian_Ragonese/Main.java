@@ -18,6 +18,7 @@ public class Main {
             System.out.println("Gioco non trovato");
         }
 
+        System.out.println(collection.researchByNumOGamers(3));
 
         System.out.println(collection.researchByPrice(30.9));
         System.out.println(" ");
