@@ -14,15 +14,23 @@ public class Boardgame extends Game {
         return nGamers;
     }
 
+    public void setnGamers(int nGamers) {
+        this.nGamers = nGamers;
+    }
+
     public int getAvgDuration() {
         return avgDuration;
     }
 
+    public void setAvgDuration(int avgDuration) {
+        this.avgDuration = avgDuration;
+    }
+
     @Override
     public String toString() {
-        return "Boardgame{" +
+        return "Boardgame{" + super.toString() +
                 "nGamers=" + nGamers +
                 ", avgDuration=" + avgDuration +
-                "} " + super.toString();
+                "} ";
     }
 }
