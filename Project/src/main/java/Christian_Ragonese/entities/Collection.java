@@ -13,10 +13,10 @@ public class Collection {
     Videogame videogame4 = new Videogame("126", "prova4", 2003, 55.90, "SWITCH", 24, Genre.PARTY);
     Videogame videogame5 = new Videogame("127", "prova5", 2004, 66.90, "PS5", 24, Genre.FPS);
     Boardgame boardgame1 = new Boardgame("128", "prova6", 2005, 10.90, 6, 30);
-    Boardgame boardgame2 = new Boardgame("129", "prova7", 2006, 14.90, 3, 30);
+    Boardgame boardgame2 = new Boardgame("129", "prova7", 2006, 14.90, 4, 30);
     Boardgame boardgame3 = new Boardgame("130", "prova8", 2007, 15.90, 3, 30);
-    Boardgame boardgame4 = new Boardgame("131", "prova9", 2008, 24.90, 6, 30);
-    Boardgame boardgame5 = new Boardgame("132", "prova10", 2009, 32.90, 6, 30);
+    Boardgame boardgame4 = new Boardgame("131", "prova9", 2008, 24.90, 2, 30);
+    Boardgame boardgame5 = new Boardgame("132", "prova10", 2009, 32.90, 1, 30);
     Scanner scanner = new Scanner(System.in);
 
     {
@@ -89,6 +89,7 @@ public class Collection {
         try {
             if (games.containsKey(IDGame)) {
                 games.remove(IDGame);
+                System.out.println("Gioco eliminato");
             } else
                 throw new NoSuchElementException("ID NON PRESENTE");
         } catch (NoSuchElementException ex) {
