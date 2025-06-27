@@ -13,10 +13,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Collection collection = new Collection();
-        for (int i = 0; i < collection.games.size(); i++) {
-            System.out.println(collection);
-        }
 
+        collection.games.forEach((s, game) -> System.out.println(game));
         System.out.println("Menu azioni : ");
         System.out.println(" ");
         System.out.println("Inserisci 1 per aggiungere un nuovo gioco.");

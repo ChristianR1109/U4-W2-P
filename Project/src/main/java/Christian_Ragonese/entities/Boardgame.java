@@ -28,9 +28,8 @@ public class Boardgame extends Game {
 
     @Override
     public String toString() {
-        return "Boardgame{" + super.toString() +
-                "nGamers=" + nGamers +
-                ", avgDuration=" + avgDuration +
-                "} ";
+        return "Boardgame " + super.toString() +
+                "| nGamers=" + nGamers +
+                " | avgDuration=" + avgDuration + " |";
     }
 }

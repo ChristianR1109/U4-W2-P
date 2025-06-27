@@ -7,16 +7,16 @@ public class Collection {
 
 
     public Map<String, Game> games = new HashMap<>();
-    Videogame videogame1 = new Videogame("123", "prova1", 2000, 29.90, "PS5", 24, Genre.ARCADE);
-    Videogame videogame2 = new Videogame("124", "prova2", 2000, 29.90, "PS5", 24, Genre.ARCADE);
-    Videogame videogame3 = new Videogame("125", "prova3", 2000, 29.90, "PS5", 24, Genre.ARCADE);
-    Videogame videogame4 = new Videogame("126", "prova4", 2000, 29.90, "PS5", 24, Genre.ARCADE);
-    Videogame videogame5 = new Videogame("127", "prova5", 2000, 29.90, "PS5", 24, Genre.ARCADE);
-    Boardgame boardgame1 = new Boardgame("128", "prova6", 2000, 29.90, 6, 30);
-    Boardgame boardgame2 = new Boardgame("129", "prova7", 2000, 29.90, 3, 30);
-    Boardgame boardgame3 = new Boardgame("130", "prova8", 2000, 29.90, 3, 30);
-    Boardgame boardgame4 = new Boardgame("131", "prova9", 2000, 29.90, 6, 30);
-    Boardgame boardgame5 = new Boardgame("132", "prova10", 2000, 29.90, 6, 30);
+    Videogame videogame1 = new Videogame("123", "prova1", 2000, 19.90, "GAMEBOY", 24, Genre.ARCADE);
+    Videogame videogame2 = new Videogame("124", "prova2", 2001, 39.90, "XBOX", 24, Genre.RPG);
+    Videogame videogame3 = new Videogame("125", "prova3", 2002, 25.90, "PC", 24, Genre.MMORPG);
+    Videogame videogame4 = new Videogame("126", "prova4", 2003, 55.90, "SWITCH", 24, Genre.PARTY);
+    Videogame videogame5 = new Videogame("127", "prova5", 2004, 66.90, "PS5", 24, Genre.FPS);
+    Boardgame boardgame1 = new Boardgame("128", "prova6", 2005, 10.90, 6, 30);
+    Boardgame boardgame2 = new Boardgame("129", "prova7", 2006, 14.90, 3, 30);
+    Boardgame boardgame3 = new Boardgame("130", "prova8", 2007, 15.90, 3, 30);
+    Boardgame boardgame4 = new Boardgame("131", "prova9", 2008, 24.90, 6, 30);
+    Boardgame boardgame5 = new Boardgame("132", "prova10", 2009, 32.90, 6, 30);
     Scanner scanner = new Scanner(System.in);
 
     {

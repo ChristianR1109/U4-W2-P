@@ -16,12 +16,11 @@ public abstract class Game {
 
     @Override
     public String toString() {
-        return "Game{" +
-                "IDGame='" + IDGame + '\'' +
-                ", title='" + title + '\'' +
-                ", publicationYear=" + publicationYear +
-                ", price=" + price +
-                '}';
+        return
+                "| ID=" + IDGame +
+                        " | title='" + title + " |" +
+                        " publicationYear=" + publicationYear +
+                        " | price=" + price;
     }
 
     public String getIDGame() {

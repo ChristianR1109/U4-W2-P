@@ -40,11 +40,11 @@ public class Videogame extends Game {
 
     @Override
     public String toString() {
-        return "Videogame{" + super.toString() +
-                "platform='" + platform + '\'' +
-                ", duration=" + duration +
-                ", genre=" + genre +
-                "} ";
+        return "Videogame " + super.toString() +
+                " | platform=" + platform +
+                " | duration=" + duration +
+                " | genre=" + genre +
+                " | ";
     }
 
 }
