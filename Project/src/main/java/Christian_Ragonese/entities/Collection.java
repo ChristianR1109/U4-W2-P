@@ -176,11 +176,19 @@ public class Collection {
                 .mapToDouble(g -> g.getPrice())
                 .summaryStatistics();
 
+
+        long countV = games.values()
+                .stream()
+                .filter(g -> g instanceof Videogame).count();
+        long countB = games.size() - countV;
+
         Optional<Game> maxPriceGame = games.values()
                 .stream()
                 .max(Comparator.comparingDouble(g -> g.getPrice()));
 
         System.out.println("Il numero totale di giochi è : " + stats.getCount());
+        System.out.println("Il numero dei Videogiochi è : " + countV);
+        System.out.println("Il numero dei Giochi da tavolo è : " + countB);
         System.out.println("Il prezzo più alto è : " + (stats.getMax()) + " del gioco : " + maxPriceGame.get());
         System.out.println("La media dei prezzi di tutti gli elementi è : " + stats.getAverage());
 
