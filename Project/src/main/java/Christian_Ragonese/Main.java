@@ -14,7 +14,7 @@ public class Main {
 
         Collection collection = new Collection();
 
-        collection.games.forEach((s, game) -> System.out.println(game));
+        
         System.out.println("Menu azioni : ");
         System.out.println(" ");
         System.out.println("Inserisci 1 per aggiungere un nuovo gioco.");
